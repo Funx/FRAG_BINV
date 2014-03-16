@@ -1,0 +1,53 @@
+<!-- HEADER -->
+<header class="container-fluid"
+								id="header">
+	<div class="row">
+		<a id="logo" ng-href="index.html">
+			<img src="img/ui_carret_left.png" class="{{carretLeft.state}}">
+			<img src="img/logo.png">
+		</a> 
+		<h1>{{app.title}}</h1>
+	</div>
+</header>
+<!-- /HEADER -->
+
+<!-- WRAPPER -->
+<div class="row
+					area"
+					id="wrapper">
+	<div class='row'
+						id='infos'>	
+		<div class='leftSide'>
+			<a ng-href='#/map'>
+			<img ng-src='img/minimap_{{area.id}}.png'>
+			</a>
+		</div>
+		<div>
+			<h2>{{title}}</h2>
+			<h3>{{area.name}}</h3>
+			<h4>{{area.township}}</h4>
+			<div id="filterBirds">
+				<input type="checkbox"><label>N'afficher que les espèces concernées par le projet.</label>
+			</div>
+			<p><strong>{{area.population}}</strong> oiseaux capturés</p>
+			<p><strong>{{area.h_filet}}</strong> heures filet</p>
+			<p class='impact'><strong>{{area.diversity}}</strong> espèces</p>
+
+		</div>
+	</div>
+	<ul class='row' id='birds'>
+		<li class='row bird {{bird.isInProject}}' ng-repeat="bird in birds| orderBy:'population':true">
+			<a ng-href='#/map/population/bird.id'>
+				<span class='col-lg-3'>
+					<img ng-src='img/bird_{{bird.id}}'>
+					{{bird.name}}
+				</span>
+				<span class='col-lg-9'>
+					<span class='percentage-bar' style='width:{{getPopulationRateOf(bird)*2}}%'></span>
+					{{bird.population}} catpures | {{getPopulationRateOf(bird)}}% 
+				</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- /WRAPPER -->
