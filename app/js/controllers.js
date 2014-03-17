@@ -6,7 +6,7 @@ angular.module('myApp.controllers', [])
 								.controller('mapCtrl', function($routeParams, $scope, $http) {
 
 									var MAX_RADIUS = 20;
-									var MIN_RADIUS = 0;
+									var MIN_RADIUS = 2;
 
 									var PER_H_FILET = 1;
 
@@ -55,7 +55,11 @@ angular.module('myApp.controllers', [])
 											return area.diversity;
 										} else {
 											//birds by PER_H_FILET h_filet
-											return area.birdsPerHour * PER_H_FILET;
+											if (!$scope.specy) {
+												return area.birdsPerHour * PER_H_FILET;
+											} else {
+												return area.countPerHour[$scope.specy.id] * PER_H_FILET;
+											}
 										}
 									};
 
@@ -67,10 +71,19 @@ angular.module('myApp.controllers', [])
 											var max = $scope.diversity.max;
 										} else {
 											//birds by PER_H_FILET h_filet
-											var min = $scope.birdsPerHour.min * PER_H_FILET;
-											var max = $scope.birdsPerHour.max * PER_H_FILET;
+											if (!$scope.specy) {
+												var min = $scope.birdsPerHour.min * PER_H_FILET;
+												var max = $scope.birdsPerHour.max * PER_H_FILET;
+											} else {
+												var min = 0;
+												var max = $scope.birdsPerHour.max * PER_H_FILET;
+											}
 										}
-										return (value - min) / (max - min) * (MAX_RADIUS - MIN_RADIUS) + MIN_RADIUS;
+										if (value == 0) {
+											return 0;
+										} else {
+											return (value - min) / (max - min) * (MAX_RADIUS - MIN_RADIUS) + MIN_RADIUS;
+										}
 									};
 
 									$scope.setDataType = function(dataType, specy) {
@@ -81,10 +94,10 @@ angular.module('myApp.controllers', [])
 													, populationLink: 'current'
 												};
 												if (specy) {
-													$scope.specy = TAFFY(DB.getBirds('guadeloupe'))({id:specy}).get()[0];
+													$scope.specy = TAFFY(DB.getBirds('guadeloupe'))({id: specy}).get()[0];
 													console.log($scope.specy);
 
-													$scope.title = "Population de " + $scope.specy.id;
+													$scope.title = "Population de " + $scope.specy.name;
 												} else {
 													$scope.title = "Population totale";
 

@@ -33,17 +33,19 @@ var DB = {
 		var taffyAreas = TAFFY(sites);
 		taffyAreas().each(function(site) {
 			site.count = {};
+			site.countPerHour = {};
 			site.population = 0;
 			site.species = {};
 			TAFFY(DB.getBirds())().each(function(bird) {
 				site.count[bird.id] = bird.count[site.id];
+				site.countPerHour[bird.id] = Math.round((bird.count[site.id]/site.h_filet)*100)/100;
 				site.population += bird.count[site.id];
 				if (bird.count[site.id] > 0) {
 					site.species[bird.id] = true;
 				}
 			});
 			site.diversity = Object.keys(site.species).length;
-			site.birdsPerHour = Math.round((site.population/site.h_filet)*10)/10;
+			site.birdsPerHour = Math.round((site.population/site.h_filet)*100)/100;
 		});
 		if (param) {
 			return taffyAreas(param).get();
@@ -82,7 +84,7 @@ var DB = {
 			taffyAreas({territoire: secteur.id}).each(function(lieuDit) {
 				secteur.h_filet += lieuDit.h_filet;
 				guadeloupe.h_filet += lieuDit.h_filet;
-
+				
 				secteur.population += lieuDit.population;
 				guadeloupe.population += lieuDit.population;
 				for (espece in lieuDit.count) {
@@ -94,7 +96,7 @@ var DB = {
 					}
 					secteur.count[espece] += lieuDit.count[espece];
 					guadeloupe.count[espece] += lieuDit.count[espece];
-
+					
 					if (lieuDit.count[espece] > 0) {
 						secteur.species[espece] = true;
 						guadeloupe.species[espece] = true;
@@ -103,10 +105,19 @@ var DB = {
 					secteur.birdsPerHour = Math.round((secteur.population/secteur.h_filet)*100)/100;
 				}
 			});
+			secteur.countPerHour={};
+			for(espece in secteur.count){
+				secteur.countPerHour[espece]=Math.round(secteur.count[espece]/secteur.h_filet*100)/100;
+			}
+			console.log(secteur.countPerHour);
 			secteurs.push(secteur);
 		}
 		guadeloupe.diversity = Object.keys(guadeloupe.species).length;
 		guadeloupe.birdsPerHour = Math.round((guadeloupe.population/guadeloupe.h_filet)*100)/100;
+		guadeloupe.countPerHour={};
+		for(espece in guadeloupe.count){
+				guadeloupe.countPerHour[espece]=Math.round(guadeloupe.count[espece]/guadeloupe.h_filet*100)/100;
+			}
 		secteurs.unshift(guadeloupe);
 		
 		if (param) {

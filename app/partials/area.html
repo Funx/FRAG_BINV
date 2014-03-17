@@ -37,7 +37,7 @@
 	</div>
 	<ul class='row' id='birds'>
 		<li class='row bird {{bird.isInProject}}' ng-repeat="bird in birds| orderBy:'population':true">
-			<a ng-href='#/map/population/bird.id'>
+			<a ng-href='#/map/population/{{bird.id}}'>
 				<span class='col-lg-3'>
 					<img ng-src='img/bird_{{bird.id}}'>
 					{{bird.name}}
