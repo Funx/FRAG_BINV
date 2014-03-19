@@ -197,14 +197,14 @@
 			<path id="gorge" fill="#8F1D00" d="M671.611,157.958c0,0-23.705-0.865-28.814-0.354c-5.111,0.511-4.088,4.088-8.176,10.22
 				c-4.088,6.133-16.352,15.841-21.463,27.595c-17.426,28.661-9.176,37.911,8.178,40.88c9.197,3.577,15.324,0.512,22.994,8.688
 				C651.664,203.938,671.611,157.958,671.611,157.958z"/>
-			<radialGradient id="oeil_5_" cx="601.748" cy="111.7832" r="16.762" gradientUnits="userSpaceOnUse">
+			<radialGradient id="oeil_32_" cx="601.748" cy="111.7832" r="16.762" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<circle id="oeil_16_" fill="url(#oeil_5_)" cx="599.362" cy="115.872" r="11.923"/>
+			<circle id="oeil_16_" fill="url(#oeil_32_)" cx="599.362" cy="115.872" r="11.923"/>
 			<path id="sous-queue" fill="#8F1D00" d="M192.395,440.655c0,0,63.83-32.405,67.918-34.96
 				c10.986-2.555,38.58,17.118,17.893,31.941C262.102,438.655,215.09,444.021,192.395,440.655z"/>
 			<path id="bec_20_" fill="#434549" d="M660.002,102.928c0,0,36.111,11.581,52.121,42.24c-3.408,3.066-7.494,0.684-11.242,4.431
@@ -239,5 +239,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

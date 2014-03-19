@@ -201,14 +201,14 @@
 				/>
 			<path id="bec_21_" fill="#2E2623" d="M109.129,109.854c0,0-55.066-6.194-88.451,18.93c5.852,1.033,34.416-7.572,94.646,16.864
 				C125.992,149.091,161.786,150.811,109.129,109.854z"/>
-			<radialGradient id="oeil_5_" cx="163.8516" cy="129.3574" r="17.8114" gradientUnits="userSpaceOnUse">
+			<radialGradient id="oeil_32_" cx="163.8516" cy="129.3574" r="17.8114" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<circle id="oeil_17_" fill="url(#oeil_5_)" cx="166.95" cy="133.259" r="12.046"/>
+			<circle id="oeil_17_" fill="url(#oeil_32_)" cx="166.95" cy="133.259" r="12.046"/>
 		</g>
 	</g>
 </g>
@@ -235,5 +235,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

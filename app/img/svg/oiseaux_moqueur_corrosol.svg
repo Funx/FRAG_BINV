@@ -173,13 +173,13 @@
 				c-3.959-10.957-19.727-22.352-25.777-25.778c-10.726-5.49-30.936-15.1-67.025-3.683c-5.524,3.314-18.045,5.155-18.045,5.155
 				s-2.578,19.887,0,29.83c2.946,0.737,15.837-9.574,30.935-1.841c8.423,3.452,33.044,40.879,48.243,54.504
 				c5.081,4.113,18.78,13.731,25.778,15.467c8.147,3.359,50.452,12.521,50.452,12.521L235.415,198.193z"/>
-			<linearGradient id="corps_3_" gradientUnits="userSpaceOnUse" x1="-12.667" y1="182.8203" x2="456.0727" y2="489.6461">
+			<linearGradient id="corps_45_" gradientUnits="userSpaceOnUse" x1="-12.667" y1="182.8203" x2="456.0727" y2="489.6461">
 				<stop  offset="0" style="stop-color:#685B4C"/>
 				<stop  offset="0.1188" style="stop-color:#6E6152"/>
 				<stop  offset="0.6089" style="stop-color:#CDC2AE"/>
 				<stop  offset="1" style="stop-color:#CFC4B0"/>
 			</linearGradient>
-			<path id="corps_9_" fill="url(#corps_3_)" d="M435.383,404.975L227.127,293.389l-34.248-72.917c0,0-28.173-18.782-35.906-22.096
+			<path id="corps_9_" fill="url(#corps_45_)" d="M435.383,404.975L227.127,293.389l-34.248-72.917c0,0-28.173-18.782-35.906-22.096
 				c-1.634-1.09-3.798-2.025-6.355-2.792c-1.587-0.95-3.247-1.72-4.969-2.18c-8.287-2.209-29.83-33.973-38.393-49.271
 				c-8.562-15.298-38.115-6.797-43.397,0c-1.968,20.055,5.558,38.224,8.32,50.653c2.132,9.591,2.783,23.941,2.97,29.998
 				c-0.577,3.089-0.709,6.43-0.299,10.052c0,0-10.682,91.698,86.91,175.478c8.418,7.155,46.401,44.191,90.594,56.713
@@ -201,14 +201,14 @@
 				c-5.523-0.736-15.467,0.368-19.887,8.103c-2.209,2.578,2.209,2.946,4.787,3.314c2.579,0.369,30.198,20.624,37.933,34.617
 				c2.578-0.368,16.94-3.314,32.039,0C101.363,147.372,107.258,145.529,100.628,133.745z"/>
 			<ellipse id="oeil_2_" fill="#E5E5DB" cx="132.115" cy="129.05" rx="8.838" ry="7.733"/>
-			<radialGradient id="oeil_5_" cx="130.8252" cy="126.9331" r="7.5565" gradientUnits="userSpaceOnUse">
+			<radialGradient id="oeil_32_" cx="130.8252" cy="126.9331" r="7.5565" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<circle id="oeil_3_" fill="url(#oeil_5_)" cx="131.838" cy="128.498" r="4.419"/>
+			<circle id="oeil_3_" fill="url(#oeil_32_)" cx="131.838" cy="128.498" r="4.419"/>
 		</g>
 	</g>
 </g>
@@ -249,5 +249,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

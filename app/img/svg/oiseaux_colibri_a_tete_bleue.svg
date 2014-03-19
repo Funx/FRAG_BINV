@@ -218,14 +218,14 @@
 				"/>
 			<path id="contour_oeil_1_" fill="#343338" d="M240.426,103.36c0,0,21.205-22.65,38.553-1.928
 				c1.752,6.75-12.705,38.376-34.215,16.868C241.914,114.278,241.545,112.801,240.426,103.36z"/>
-			<radialGradient id="yeux_3_" cx="253.082" cy="102.0386" r="21.9759" gradientUnits="userSpaceOnUse">
+			<radialGradient id="yeux_4_" cx="253.082" cy="102.0386" r="21.9759" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<path id="yeux_1_" fill="url(#yeux_3_)" d="M270.453,114.438c-2.85,6.014-10.618,8.301-17.354,5.11
+			<path id="yeux_1_" fill="url(#yeux_4_)" d="M270.453,114.438c-2.85,6.014-10.618,8.301-17.354,5.11
 				c-6.733-3.189-9.886-10.649-7.036-16.664c2.849-6.014,10.617-8.301,17.352-5.111C270.15,100.964,273.301,108.425,270.453,114.438
 				z"/>
 		</g>
@@ -278,5 +278,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

@@ -188,14 +188,14 @@
 				L128.068,138.561z"/>
 			<ellipse id="contour_oeil_3_" fill="#F3D417" cx="149.48" cy="119.198" rx="22.364" ry="17.57"/>
 			<ellipse id="contour_oeil_4_" fill="#E2B000" cx="149.479" cy="119.198" rx="19.239" ry="15.115"/>
-			<radialGradient id="oeil_5_" cx="154.8799" cy="114.3569" r="19.573" gradientUnits="userSpaceOnUse">
+			<radialGradient id="oeil_32_" cx="154.8799" cy="114.3569" r="19.573" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<ellipse id="oeil_1_" fill="url(#oeil_5_)" cx="149.759" cy="118.08" rx="12.568" ry="10.334"/>
+			<ellipse id="oeil_1_" fill="url(#oeil_32_)" cx="149.759" cy="118.08" rx="12.568" ry="10.334"/>
 		</g>
 	</g>
 </g>
@@ -240,5 +240,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>
