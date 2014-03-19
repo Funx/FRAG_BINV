@@ -221,14 +221,14 @@
 				c-3.952-3.922-1.831-12.424-32.063-21.861c-10.465-3.674-18.268-8.811-18.268-8.811s-4.56-12.862,10.874-6.934
 				c9.947,4.512,23.494,9.699,23.494,9.699s9.428,6.064,5.485-4.649c-3.939-10.712-31.785-114.122-31.785-114.122L279.932,485.504z"
 				/>
-			<linearGradient id="corps_3_" gradientUnits="userSpaceOnUse" x1="532.5498" y1="50.1973" x2="160.4202" y2="443.4465">
+			<linearGradient id="corps_45_" gradientUnits="userSpaceOnUse" x1="532.5498" y1="50.1973" x2="160.4202" y2="443.4465">
 				<stop  offset="0" style="stop-color:#693B35"/>
 				<stop  offset="0.4951" style="stop-color:#7A4F50"/>
 				<stop  offset="0.6832" style="stop-color:#877076"/>
 				<stop  offset="0.797" style="stop-color:#938D97"/>
 				<stop  offset="1" style="stop-color:#9DA6B5"/>
 			</linearGradient>
-			<path id="corps_33_" fill="url(#corps_3_)" d="M516.198,105.117c0,0,39.517,94.652-113.948,218.71
+			<path id="corps_33_" fill="url(#corps_45_)" d="M516.198,105.117c0,0,39.517,94.652-113.948,218.71
 				c-2.756,4.595-90.979,83.622-183.79,92.813c-5.513,3.676-52.379,32.162-52.379,32.162s-45.944-45.943-15.621-96.483
 				c8.271-15.622,71.679-121.301,143.356-192.061c10.107-10.106,47.78-45.946,90.053-74.433c4.598-4.595,22.057-19.301,26.65-25.732
 				c4.598-6.431,54.22-14.704,68.005-13.783c13.783,0.919,42.24,6.432,42.24,6.432s29.436,1.839,19.328,11.949
@@ -248,14 +248,14 @@
 			<circle id="contour" fill="#CEC11B" cx="493.226" cy="42.17" r="10.174"/>
 			<path fill="#CEC11B" d="M492.895,32.326c0,0,21.631-1.805,27.407,7.235c-4.393,5.595-14.054,13.608-27.837,12.745
 				C482.315,51.961,484.436,35.447,492.895,32.326z"/>
-			<radialGradient id="oeil_5_" cx="494.167" cy="40.2813" r="9.079" gradientUnits="userSpaceOnUse">
+			<radialGradient id="oeil_32_" cx="494.167" cy="40.2813" r="9.079" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<path id="oeil_26_" fill="url(#oeil_5_)" d="M500.869,42.17c0,4.223-3.425,7.646-7.643,7.646c-4.219,0-7.644-3.423-7.644-7.646
+			<path id="oeil_26_" fill="url(#oeil_32_)" d="M500.869,42.17c0,4.223-3.425,7.646-7.643,7.646c-4.219,0-7.644-3.423-7.644-7.646
 				c0-4.222,3.425-7.646,7.644-7.646C497.444,34.523,500.869,37.948,500.869,42.17z"/>
 			<path id="sous_bec" fill="#F7F7F7" d="M542.848,61.008c0,0-60.189,4.136-64.323,7.354c-5.976,1.837-7.81,9.647,6.892,7.35
 				C500.117,73.414,534.117,68.817,542.848,61.008z"/>
@@ -272,5 +272,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

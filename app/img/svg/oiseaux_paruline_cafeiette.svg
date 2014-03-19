@@ -209,14 +209,14 @@
 			c1.543,0.661,5.509-2.203,6.61-3.524c1.103-1.323,21.594-5.51,31.949,3.854c1.764,1.212,5.729,1.212,9.255,0.771
 			s5.288,5.949-7.932,6.831c-3.525,0.881-5.509,0-12.78,4.406c-4.407,3.526-13.882,4.628-22.034,1.102
 			c-4.407-1.102-9.254-0.313-14.542,2.158c-3.085,2.249-9.695-3.7-9.695-3.7C234.448,264.512,229.16,258.563,243.703,256.58z"/>
-		<radialGradient id="oeil_5_" cx="119.1362" cy="171.2363" r="17.5289" gradientUnits="userSpaceOnUse">
+		<radialGradient id="oeil_32_" cx="119.1362" cy="171.2363" r="17.5289" gradientUnits="userSpaceOnUse">
 			<stop  offset="0" style="stop-color:#FFFFFF"/>
 			<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 			<stop  offset="0.2079" style="stop-color:#494340"/>
 			<stop  offset="0.3663" style="stop-color:#28201D"/>
 			<stop  offset="1" style="stop-color:#231B18"/>
 		</radialGradient>
-		<circle id="oeil_15_" fill="url(#oeil_5_)" cx="122.515" cy="174.612" r="11.017"/>
+		<circle id="oeil_15_" fill="url(#oeil_32_)" cx="122.515" cy="174.612" r="11.017"/>
 	</g>
 </g>
 <g id="saltator_gros_bec">
@@ -248,5 +248,15 @@
 <g id="pic_de_la_guadeloupe">
 </g>
 <g id="héron_garde-boeufs">
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>

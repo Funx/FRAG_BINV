@@ -238,14 +238,14 @@
 			<path fill="#CEC11B" d="M533.963,96.884c0,0,18.99,1.935,22.521,10.683c-4.699,4.125-14.345,9.491-26.12,6.52
 				C521.646,112.149,526.146,98.215,533.963,96.884z"/>
 			
-				<radialGradient id="oeil_5_" cx="1363.2139" cy="-155.3779" r="7.984" gradientTransform="matrix(0.983 0.1837 -0.1837 0.983 -834.8055 6.2786)" gradientUnits="userSpaceOnUse">
+				<radialGradient id="oeil_32_" cx="1363.2139" cy="-155.3779" r="7.984" gradientTransform="matrix(0.983 0.1837 -0.1837 0.983 -834.8055 6.2786)" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#FFFFFF"/>
 				<stop  offset="0.1386" style="stop-color:#D5D4D3"/>
 				<stop  offset="0.2079" style="stop-color:#494340"/>
 				<stop  offset="0.3663" style="stop-color:#28201D"/>
 				<stop  offset="1" style="stop-color:#231B18"/>
 			</radialGradient>
-			<circle id="oeil_28_" fill="url(#oeil_5_)" cx="532.659" cy="105.447" r="6.721"/>
+			<circle id="oeil_28_" fill="url(#oeil_32_)" cx="532.659" cy="105.447" r="6.721"/>
 			<path id="queue_37_" fill="#C6C2AB" d="M137.117,344.508c0,0-33.22,13.106-41.965,18.298
 				c-8.746,5.193-46.695,20.438-33.614,5.706c-8.126,4.256-47.812,7.292,15.253-23.422
 				C115.657,336.876,142.6,328.237,137.117,344.508z"/>
@@ -260,5 +260,15 @@
 			<path fill="#B7916A" d="M484.247,287.599c0,0-78.907-31.174-92.631,49.774C467.908,311.495,484.247,287.599,484.247,287.599z"/>
 		</g>
 	</g>
+</g>
+<g id="photos">
+</g>
+<g id="solitaire_siffleur">
+</g>
+<g id="tyran_janeau">
+</g>
+<g id="colibri_fallevert">
+</g>
+<g id="colombe_a_queue_noire">
 </g>
 </svg>
