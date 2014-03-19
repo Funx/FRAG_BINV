@@ -38,11 +38,14 @@
 	<ul class='row' id='birds'>
 		<li class='row bird {{bird.isInProject}}' ng-repeat="bird in birds| orderBy:'population':true">
 			<a ng-href='#/map/population/{{bird.id}}'>
-				<span class='col-lg-3'>
-					<img ng-src='img/bird_{{bird.id}}'>
+				<span class="col-lg-2">
+				<img ng-src='img/svg/oiseaux_{{bird.id}}.svg'>
+				</span>
+				<span class='col-lg-2'>
+					
 					{{bird.name}}
 				</span>
-				<span class='col-lg-9'>
+				<span class='col-lg-8 rightSide'>
 					<span class='percentage-bar' style='width:{{getPopulationRateOf(bird)*2}}%'></span>
 					{{bird.population}} catpures | {{getPopulationRateOf(bird)}}% 
 				</span>

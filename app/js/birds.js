@@ -301,7 +301,7 @@ var birds = [
 		, "isInProject": true
 	}
 	,{
-			"id": "trembleur brun"
+			"id": "trembleur_brun"
 		, "name": "Trembleur brun"
 		, "count": {
 			"providence_la_grand_mare":0
@@ -541,8 +541,8 @@ var birds = [
 		, "isInProject": true
 	}
 	,{
-		"id": "vacher_luisant"
-		, "name": "Vacher luisant"
+		"id": "vachet_luisant"
+		, "name": "Vachet luisant"
 		, "count": {
 			"providence_la_grand_mare":0
 			,"morne_aubin":0
@@ -600,6 +600,7 @@ var birds = [
 		}
 		, "isInProject": true
 	}
+	//Not in project -->
 	,{
 		"id": "merle_quiscale"
 		, "name": "Merle quiscale"
@@ -721,8 +722,8 @@ var birds = [
 		, "isInProject": false
 	}
 	,{
-		"id": "tourterelle_a_queue_carre"
-		, "name": "Tourterelle à queue carré"
+		"id": "tourterelle_a_queue_carree"
+		, "name": "Tourterelle à queue carrée"
 		, "count": {
 			"providence_la_grand_mare":0
 			,"morne_aubin":2
@@ -751,7 +752,7 @@ var birds = [
 		, "isInProject": false
 	}
 	,{
-		"id": "colibri_huppé"
+		"id": "colibri_huppe"
 		, "name": "Colibri huppé"
 		, "count": {
 			"providence_la_grand_mare":1
@@ -841,8 +842,8 @@ var birds = [
 		, "isInProject": false
 	}
 	,{
-		"id": "crecelle_d_amerique"
-		, "name": "Crécelle d'Amérique"
+		"id": "crecerelle_d_amerique"
+		, "name": "Crécerelle d'Amérique"
 		, "count": {
 			"providence_la_grand_mare":1
 			,"morne_aubin":0
@@ -870,7 +871,7 @@ var birds = [
 		}
 		, "isInProject": false
 	}
-	,{
+	/*,{
 		"id": "oriole_de_martinique"
 		, "name": "Oriole de Martinique"
 		, "count": {
@@ -899,8 +900,8 @@ var birds = [
 			,"sofaia":0
 		}
 		, "isInProject": false
-	}
-	,{
+	}*/
+	/*,{
 		"id": "capucin_a_dos_marron"
 		, "name": "Capucin à dos marron"
 		, "count": {
@@ -930,8 +931,8 @@ var birds = [
 		}
 		, "isInProject": false
 	}
-	,{
-		"id": "capucin_bullfinch"
+	,{*/
+	/*	"id": "capucin_bullfinch"
 		, "name": "Capucin Bullfinch"
 		, "count": {
 			"providence_la_grand_mare":0
@@ -959,8 +960,8 @@ var birds = [
 			,"sofaia":0
 		}
 		, "isInProject": false
-	}
-	,{
+	}*/
+	/*,{
 		"id": "capucin_a_tete_noire"
 		, "name": "Capucin à tête noire"
 		, "count": {
@@ -989,8 +990,8 @@ var birds = [
 			,"sofaia":0
 		}
 		, "isInProject": false
-	}
-	,{
+	}*/
+	/*,{
 		"id": "capucin_a_tete_blanche"
 		, "name": "Capucin à tête blanche"
 		, "count": {
@@ -1019,7 +1020,7 @@ var birds = [
 			,"sofaia":0
 		}
 		, "isInProject": false
-	}
+	}*/
 	,{
 		"id": "heron_vert"
 		, "name": "Héron vert"
@@ -1050,7 +1051,7 @@ var birds = [
 		}
 		, "isInProject": false
 	}
-	,{
+	/*,{
 		"id": "petite_buse"
 		, "name": "Petite buse"
 		, "count": {
@@ -1079,7 +1080,7 @@ var birds = [
 			,"sofaia":0
 		}
 		, "isInProject": false
-	}
+	}*/
 	,{
 		"id": "pic_de_la_guadeloupe"
 		, "name": "Pic de la Guadeloupe"
@@ -1122,36 +1123,6 @@ var birds = [
 			,"maisoncelle":0
 			,"croustere":0
 			,"geffrier":1
-			,"grands_fonds":0
-			,"blanchet":0
-			,"morne_bel_air":0
-			,"barthole":0
-			,"maison_de_la_foret":0
-			,"riviere_moreau":0
-			,"grand_etang":0
-			,"massy":0
-			,"fougere":0
-			,"hauteurs_bananiers":0
-			,"douville":0
-			,"petite_montagne":0
-			,"bellevue":0
-			,"solitude":0
-			,"sofaia":0
-		}
-		, "isInProject": false
-	}
-	,{
-		"id": "quiscale_merle"
-		, "name": "Quiscale merle"
-		, "count": {
-			"providence_la_grand_mare":0
-			,"morne_aubin":0
-			,"deshauteurs":0
-			,"gaschet":0
-			,"beautiran":0
-			,"maisoncelle":0
-			,"croustere":0
-			,"geffrier":0
 			,"grands_fonds":0
 			,"blanchet":0
 			,"morne_bel_air":0

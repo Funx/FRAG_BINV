@@ -386,21 +386,53 @@ body,
 #wrapper.area #birds .bird {
   list-style: none;
   position: relative;
+  margin-bottom: 88px;
 }
-/* line 320, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003320}}
-#wrapper.area #birds .bird:first-child:before {
+/* line 322, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003322}}
+#wrapper.area #birds .bird.false {
+  opacity: 0.5;
+}
+/* line 326, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003326}}
+#wrapper.area #birds .bird img {
+  width: 75%;
+  margin-top: -50%;
+}
+/* line 331, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003331}}
+#wrapper.area #birds .bird:before {
   background: #fff;
   width: 50px;
   height: 50px;
   content: " ";
-  display: block;
+  display: none;
   position: absolute;
-  left: -50px;
-  top: -50%;
+  left: -65px;
+  top: -100%;
 }
-/* line 332, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003332}}
+/* line 341, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003341}}
+#wrapper.area #birds .bird:nth-child(1):before {
+  display: block;
+}
+/* line 344, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003344}}
+#wrapper.area #birds .bird:nth-child(2):before {
+  display: block;
+}
+/* line 347, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003347}}
+#wrapper.area #birds .bird:nth-child(3):before {
+  display: block;
+}
+/* line 351, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003351}}
+#wrapper.area #birds .bird .rightSide {
+  height: 100%;
+}
+/* line 356, E:\weblocal\Projet FRAG BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003356}}
 #wrapper.area .percentage-bar {
   display: inline-block;
   height: 20px;
