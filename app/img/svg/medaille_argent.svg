@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48.75px" height="96px" viewBox="0 0 48.75 96" enable-background="new 0 0 48.75 96" xml:space="preserve">
+<g>
+	<polygon fill="#47774F" points="13.805,38.25 6.653,94.113 24.234,80.693 41.315,94.081 34.164,38.25 	"/>
+	<g>
+		<g>
+			<circle fill="#808080" cx="23.984" cy="24.465" r="22.409"/>
+			<circle fill="#B3B3B3" cx="23.984" cy="24.465" r="17.558"/>
+		</g>
+		<g>
+			<rect x="7.603" y="17.946" fill="none" width="34.471" height="16.621"/>
+			<text transform="matrix(1 0 0 1 10.2031 31.1504)" fill="#D1D1D1" font-family="'Roboto-Regular'" font-size="17.3285">2</text>
+			<text transform="matrix(0.583 0 0 0.583 19.959 25.3799)" fill="#D1D1D1" font-family="'Roboto-Regular'" font-size="17.3285">ème</text>
+		</g>
+		<g>
+			<rect x="7.489" y="17.6" fill="none" width="34.469" height="16.621"/>
+			<text transform="matrix(1 0 0 1 10.0889 30.8037)" fill="#F2F2F2" font-family="'Roboto-Regular'" font-size="17.3285">2</text>
+			<text transform="matrix(0.583 0 0 0.583 19.8447 25.0332)" fill="#F2F2F2" font-family="'Roboto-Regular'" font-size="17.3285">ème</text>
+		</g>
+	</g>
+</g>
+</svg>

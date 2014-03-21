@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48.75px" height="96px" viewBox="0 0 48.75 96" enable-background="new 0 0 48.75 96" xml:space="preserve">
+<polygon fill="#C61A1A" points="14.305,38.25 7.153,93.738 24.734,80.131 41.815,93.8 34.664,38.25 "/>
+<g>
+	<g>
+		<circle fill="#C99B2B" cx="24.484" cy="24.715" r="22.409"/>
+		<circle fill="#E0B448" cx="24.484" cy="24.715" r="17.558"/>
+	</g>
+	<g>
+		<rect x="7.712" y="18.196" fill="none" width="34.471" height="16.621"/>
+		<text transform="matrix(1 0 0 1 15.667 31.4004)" fill="#D1D1D1" font-family="'Roboto-Regular'" font-size="17.3285">1</text>
+		<text transform="matrix(0.583 0 0 0.583 25.4229 25.6299)" fill="#D1D1D1" font-family="'Roboto-Regular'" font-size="17.3285">er</text>
+	</g>
+	<g>
+		<rect x="7.599" y="17.85" fill="none" width="34.469" height="16.621"/>
+		<text transform="matrix(1 0 0 1 15.5527 31.0537)" fill="#F2F2F2" font-family="'Roboto-Regular'" font-size="17.3285">1</text>
+		<text transform="matrix(0.583 0 0 0.583 25.3086 25.2832)" fill="#F2F2F2" font-family="'Roboto-Regular'" font-size="17.3285">er</text>
+	</g>
+</g>
+</svg>

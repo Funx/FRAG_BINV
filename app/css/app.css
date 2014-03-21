@@ -1,24 +1,24 @@
 /* app css stylesheet */
 /*
-	FONTS
+        FONTS
 */
 /*
-	VARS
+        VARS
 */
 /*
-	CLASSES
+        CLASSES
 */
-/* line 25, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000325}}
+/* line 25, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000325}}
 .reset {
   margin: 0;
   padding: 0;
 }
 /*
-	GLOBAL
+        GLOBAL
 */
-/* line 34, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000334}}
+/* line 34, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000334}}
 * {
   box-sizing: border-box;
   font-family: 'Roboto';
@@ -28,8 +28,8 @@
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 }
-/* line 44, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000344}}
+/* line 44, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000344}}
 html,
 body,
 [ng-view] {
@@ -38,50 +38,50 @@ body,
   height: 100%;
   background: #c7e2e8;
 }
-/* line 50, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000350}}
+/* line 50, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000350}}
 .svg_container {
   text-align: center;
   height: auto;
   width: 100%;
 }
-/* line 56, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000356}}
+/* line 56, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000356}}
 .cliquable {
   cursor: pointer;
   cursor: hand;
 }
-/* line 61, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000361}}
+/* line 61, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000361}}
 .hidden {
   display: none;
 }
-/* line 64, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000364}}
+/* line 64, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000364}}
 .visible {
   display: inherit;
 }
-/* line 68, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000368}}
+/* line 68, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000368}}
 .area {
   fill: #c51919;
 }
-/* line 70, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000370}}
+/* line 70, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000370}}
 .area:hover,
 .area.focus {
   fill: #ea5a5a;
 }
-/* line 75, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000375}}
+/* line 75, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000375}}
 #header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-/* line 80, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000380}}
+/* line 80, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000380}}
 #header > .row {
   margin: 0;
   padding: 0;
@@ -90,8 +90,8 @@ body,
   display: flex;
   align-items: center;
 }
-/* line 86, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000386}}
+/* line 86, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000386}}
 #header > .row h1 {
   margin: 0;
   padding: 0;
@@ -100,26 +100,26 @@ body,
   font-weight: 300;
   text-align: center;
 }
-/* line 94, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000394}}
+/* line 94, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000394}}
 #header > .row #logo img {
   max-height: 88px;
 }
-/* line 98, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000398}}
+/* line 98, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\0000398}}
 #header > .row.nav {
   height: 44px;
   text-align: center;
 }
-/* line 100, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003100}}
+/* line 100, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003100}}
 #header > .row.nav > li {
   border: 3px solid #ffffff;
   border-left: 1.5px solid #ffffff;
   height: 44px;
 }
-/* line 105, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003105}}
+/* line 105, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003105}}
 #header > .row.nav > li a {
   height: 100%;
   margin: auto;
@@ -129,37 +129,37 @@ body,
   color: #333333;
   padding: 5px;
 }
-/* line 113, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003113}}
+/* line 113, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003113}}
 #header > .row.nav > li a span {
   width: 50%;
 }
-/* line 117, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003117}}
+/* line 117, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003117}}
 #header > .row.nav > li a:hover span,
 #header > .row.nav > li a:active span,
 #header > .row.nav > li a.current span {
   border-bottom: 6px #c51919 solid;
 }
-/* line 122, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003122}}
+/* line 122, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003122}}
 #header > .row.nav > li:first-child {
   border-left: 0;
 }
-/* line 125, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003125}}
+/* line 125, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003125}}
 #header > .row.nav > li:last-child {
   border-right: 0;
 }
-/* line 131, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003131}}
+/* line 131, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003131}}
 #header h1 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 138, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003138}}
+/* line 138, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003138}}
 #wrapper {
   height: 100%;
   width: 100%;
@@ -168,28 +168,28 @@ body,
 }
 /* END - GLOBAL */
 /*
-	View CARTE
+        View CARTE
 */
-/* line 150, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003150}}
+/* line 150, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003150}}
 #pieChart {
   height: 100%;
   width: 75%;
 }
-/* line 155, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003155}}
+/* line 155, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003155}}
 #wrapper.map {
   display: flex;
   flex-direction: row;
 }
-/* line 159, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003159}}
+/* line 159, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003159}}
 #wrapper.map > .leftSide {
-  width: 205px;
+  width: 20%;
   text-align: center;
 }
-/* line 163, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003163}}
+/* line 163, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003163}}
 #wrapper.map > .leftSide h2 {
   margin: 0;
   padding: 0;
@@ -197,8 +197,8 @@ body,
   font-size: 1.4em;
   font-weight: 500;
 }
-/* line 169, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003169}}
+/* line 169, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003169}}
 #wrapper.map > .leftSide h3 {
   margin: 0;
   padding: 0;
@@ -206,8 +206,8 @@ body,
   font-size: 1.4em;
   font-weight: 300;
 }
-/* line 176, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003176}}
+/* line 176, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003176}}
 #wrapper.map > .leftSide .legend {
   margin: 0;
   padding: 0;
@@ -218,8 +218,8 @@ body,
   flex-direction: column;
   width: 100%;
 }
-/* line 186, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003186}}
+/* line 186, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003186}}
 #wrapper.map > .leftSide .legend > li,
 #wrapper.map > .leftSide .legend a,
 #wrapper.map > .leftSide .legend a:hover,
@@ -238,8 +238,8 @@ body,
   margin: 11px 0;
   text-align: left;
 }
-/* line 200, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003200}}
+/* line 200, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003200}}
 #wrapper.map > .leftSide .legend > li > span,
 #wrapper.map > .leftSide .legend a > span,
 #wrapper.map > .leftSide .legend a:hover > span,
@@ -249,8 +249,8 @@ body,
   height: 20px;
   margin-left: 10px;
 }
-/* line 211, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003211}}
+/* line 211, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003211}}
 #wrapper.map #map {
   flex: 1;
   min-width: 50%;
@@ -259,13 +259,13 @@ body,
   flex-align: center;
   justify-content: middle;
 }
-/* line 219, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003219}}
+/* line 219, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003219}}
 #wrapper.map #map #chart {
   margin: auto;
 }
-/* line 224, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003224}}
+/* line 224, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003224}}
 #wrapper.map > .rightSide {
   width: 205px;
   height: 100%;
@@ -275,23 +275,23 @@ body,
   justify-content: space-around;
   align-items: flex-end;
 }
-/* line 233, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003233}}
+/* line 233, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003233}}
 #wrapper.map > .rightSide > li {
   display: block;
 }
-/* line 235, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003235}}
+/* line 235, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003235}}
 #wrapper.map > .rightSide > li.pusher {
   height: 100px;
 }
-/* line 238, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003238}}
+/* line 238, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003238}}
 #wrapper.map > .rightSide > li a {
   display: block;
 }
-/* line 246, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003246}}
+/* line 246, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003246}}
 #notifier {
   position: fixed;
   bottom: 0;
@@ -300,14 +300,14 @@ body,
   padding-bottom: 22px;
   opacity: 0;
 }
-/* line 254, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003254}}
+/* line 254, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003254}}
 #notifier.visible {
   display: block;
   opacity: 1;
 }
-/* line 259, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003259}}
+/* line 259, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003259}}
 #notifier h2.name {
   margin: 0;
   padding: 0;
@@ -315,16 +315,16 @@ body,
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 265, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003265}}
+/* line 265, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003265}}
 #notifier h3 {
   margin: 0;
   padding: 0;
   font-size: 1.4em;
   font-weight: 100;
 }
-/* line 270, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003270}}
+/* line 270, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003270}}
 #notifier .impact {
   margin: 0;
   padding: 0;
@@ -335,106 +335,163 @@ body,
   width: auto;
   background: #c51919;
   color: #ffffff;
-  padding: 7.333333333333333px 14.666666666666666px;
-  margin: 7.333333333333333px 7.333333333333333px 0 0;
+  padding: 7.33333333px 14.66666667px;
+  margin: 7.33333333px 7.33333333px 0 0;
   position: relative;
-  left: -14.666666666666666px;
+  left: -14.66666667px;
   border-radius: 20px;
 }
-/* line 284, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003284}}
+/* line 285, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003285}}
 #notifier .impact strong {
   font-weight: 800;
 }
 /*
-	View area
+        View area
 */
-/* line 295, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003295}}
+/* line 296, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003296}}
 #wrapper.area #infos {
   display: flex;
   flex-direction: row;
 }
-/* line 298, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003298}}
+/* line 299, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003299}}
 #wrapper.area #infos > div {
   width: 50%;
   padding: 44px;
 }
-/* line 302, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003302}}
+/* line 303, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003303}}
 #wrapper.area #infos > div.leftSide {
   text-align: center;
   height: 200px;
 }
-/* line 305, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003305}}
+/* line 306, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003306}}
 #wrapper.area #infos > div.leftSide > img {
   margin: auto;
   height: 100%;
   text-align: center;
 }
-/* line 313, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003313}}
+/* line 314, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003314}}
 #wrapper.area #birds {
   list-style: none;
   padding: 0;
   margin: 0 15%;
 }
-/* line 317, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003317}}
+/* line 318, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003318}}
 #wrapper.area #birds .bird {
   list-style: none;
   position: relative;
   margin-bottom: 88px;
 }
-/* line 322, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003322}}
+/* line 323, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003323}}
 #wrapper.area #birds .bird.false {
   opacity: 0.5;
 }
-/* line 326, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003326}}
+/* line 327, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003327}}
 #wrapper.area #birds .bird img {
   width: 75%;
   margin-top: -50%;
 }
-/* line 331, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003331}}
+/* line 332, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003332}}
 #wrapper.area #birds .bird:before {
-  background: #fff;
-  width: 50px;
-  height: 50px;
+  background: #ff0000;
   content: " ";
   display: none;
   position: absolute;
   left: -65px;
-  top: -100%;
+  top: -200%;
+  width: 47px;
+  height: 96px;
 }
-/* line 341, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003341}}
+/* line 342, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003342}}
 #wrapper.area #birds .bird:nth-child(1):before {
   display: block;
+  background: url('../img/png/medaille_or.png');
 }
-/* line 344, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003344}}
+/* line 346, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003346}}
 #wrapper.area #birds .bird:nth-child(2):before {
   display: block;
+  background: url('../img/png/medaille_argent.png');
 }
-/* line 347, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003347}}
+/* line 350, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003350}}
 #wrapper.area #birds .bird:nth-child(3):before {
   display: block;
+  background: url('../img/png/medaille_bronze.png');
 }
-/* line 351, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003351}}
+/* line 355, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003355}}
 #wrapper.area #birds .bird .rightSide {
   height: 100%;
 }
-/* line 356, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003356}}
+/* line 360, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003360}}
 #wrapper.area .percentage-bar {
   display: inline-block;
   height: 20px;
-  background: #fff;
+  background: #c51919;
+}
+/* line 365, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003365}}
+#wrapper.area .ng-binding {
+  color: #333;
+  font-family: 'Roboto';
+}
+/* line 369, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003369}}
+#wrapper.area h2.ng-binding {
+  text-transform: uppercase;
+}
+/******** CSS Elodie **********/
+/* line 376, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003376}}
+.oiseauIndex {
+  position: absolute;
+  width: 35%;
+  height: 18%;
+  display: flex;
+  align-items: flex-end;
+}
+/* line 382, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003382}}
+.oiseauIndex img {
+  display: block;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+/* line 388, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003388}}
+.oiseauIndex h2 {
+  text-align: right;
+}
+/* line 392, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003392}}
+.oiseauIndex h3 {
+  text-align: right;
+}
+/* line 395, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003395}}
+.oiseauIndex .descriptionOiseau {
+  float: right;
+}
+/* line 400, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003400}}
+.leftSide {
+  margin-top: -20px;
+}
+/* line 402, C:\Users\Elodie\Documents\GitHub\FRAG_BINV\app\less\app.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Elodie\/Documents\/GitHub\/FRAG_BINV\/app\/less\/app\.less}line{font-family:\00003402}}
+.leftSide .svg_container {
+  margin-top: 50%;
 }

@@ -8,7 +8,7 @@ var DB = {
 		return object.get();
 	}
 	,
-	getBirds: function(lieu,espece) {
+	getBirds: function(lieu) {
 		var taffyBirds = TAFFY(birds);
 		if (!lieu) {
 			return taffyBirds().get();
