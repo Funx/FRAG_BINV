@@ -1,17 +1,17 @@
 <!-- HEADER -->
 <header class="container-fluid"
         id="header">
-    <div class="row">
-        <a id="logo" ng-href="index.html">
-            <img src="img/logo.png">
-        </a> 
-        <h1>{{app.title}}</h1>
-    </div>
-    <ul class="row
-        nav">
-        <li class="col-xs-6"><a ng-click="setDataType('population')" class="cliquable {{states.populationLink}}"><span>Population</span></a></li>
-        <li class="col-xs-6"><a ng-click="setDataType('diversity')" class="cliquable {{states.diversityLink}}"><span>Diversité</span></a></li>
-    </ul>
+	<div class="row">
+		<a id="logo" ng-href="index.html">
+			<img src="img/logo.png">
+		</a> 
+		<h1>{{title}}</h1>
+	</div>
+	<ul ng-if='displayMenu' class="row 
+					nav">
+		<li class="col-xs-6"><a ng-click="setDataType('population')" class="cliquable {{states.populationLink}}"><span>Population</span></a></li>
+		<li class="col-xs-6"><a ng-click="setDataType('diversity')" class="cliquable {{states.diversityLink}}"><span>Diversité</span></a></li>
+	</ul>
 </header>
 <!-- /HEADER -->
 
@@ -21,60 +21,59 @@
      id="wrapper">
 
 
-    <div class="leftSide">
-        <div class="oiseauIndex"> 
-            <img src="img/svg/oiseaux_colibri_madere.svg" alt="oiseau">
-            <div class="descriptionOiseau">
-                <h2>{{title}}</h2>
-                <h3>{{subtitle}}</h3>
-            </div>
-        </div>
-        <div class="svg_container">
-            <svg id="pieChart" width="100%" height="100%" viewBox="0 0 400 400" preserveAspectRatio="xMaxYmax" ></svg>
-        </div>
-        <ul class="legend">
-            <li ng-repeat="sector in sectors" class="{{sector.id}}">
-                <a ng-href="#/area/{{sector.id}}" ng-click="" ng-mouseover="notifyStart(sector)" ng-mouseleave="notifyEnd()">
-                    {{sector.lieuDit}}
-                    <span style="background:{{sector.color}}"></span>
-                </a>
-            </li>
-        </ul>
-        
-    </div>
-    <!-- MAP -->
-    <div id="map">
-        <div class="svg_container">
-            <svg id="mapChart" width="100%" height="100%" viewBox="0 0 507 510" preserveAspectRatio="xMaxYmax" 
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="map-background">
-            </g>
-            <g>
-            <a ng-repeat="area in areas" xlink:href="#/area" ng-href="#/area/{{area.id}}" ng-click="">
-                <circle ng-mouseover="notifyStart(area)" ng-mouseleave="notifyEnd()"  class="area cliquable"
-                        cx="{{area.pos.x}}" cy="{{area.pos.y}}" r="{{getWeightedValueOf(area)}}" fill="" />
-            </a>
-            </g>
-            </svg>
-        </div>
-    </div>
-    <!-- /MAP -->
-    <ul class="rightSide">
-        <li><a ng-mouseover="notifyStart(guadeloupe)" ng-mouseleave="notifyEnd()" 
-               ng-href="#/area/{{guadeloupe.id}}" class="minimap"><img ng-src="img/minimap_{{guadeloupe.id}}.png"></a></li>
-        <li ng-repeat="sector in sectors"><a ng-mouseover="notifyStart(sector)" ng-mouseleave="notifyEnd()" 
-                                             ng-href="#/area/{{sector.id}}" class="minimap"><img ng-src="img/minimap_{{sector.id}}.png"></a></li>
-        <li class="pusher"></li>
-    </ul>
-    <!-- Notification area -->
-    <div id="notifier">
-        <h2 class="name">{{notification.lieuDit}} - {{notification.fragment}}</h2>
-        <h3 class="area">{{notification.commune}}</h3>
-        <p class="impact"><strong>{{getValueOf(notification)}}</strong> {{dataType}}</p>
-    </div>
+	<div class="leftSide">
+		<div class="oiseauIndex"> 
+			<img ng-if='displayPhoto' src="img/svg/oiseaux_{{specy.id}}.svg" alt="oiseau">
+			<div class="descriptionOiseau">
+				<h2>{{title}}</h2>
+				<h3>{{subtitle}}</h3>
+			</div>
+		</div>
+		<div class="svg_container">
+			<svg id="pieChart" width="100%" height="100%" viewBox="0 0 400 400" preserveAspectRatio="xMaxYmax" ></svg>
+		</div>
+		<ul class="legend">
+			<li ng-repeat="sector in sectors" class="{{sector.id}}">
+				<a ng-href="#/area/{{sector.id}}" ng-click="" ng-mouseover="notifyStart(sector)" ng-mouseleave="notifyEnd()">
+					{{sector.lieuDit}}
+					<span style="background:{{sector.color}}"></span>
+				</a>
+			</li>
+		</ul>
 
-    <!-- /Notification area -->
+	</div>
+	<!-- MAP -->
+	<div id="map">
+		<div class="svg_container">
+			<svg id="mapChart" width="100%" height="100%" viewBox="0 0 507 510" preserveAspectRatio="xMaxYmax" ng-init='mapInit()'
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+			<image x="0" y="0" width='100%' height='100%' xlink:href="img/map.svg" />
+			<g>
+			<a ng-repeat="area in areas" xlink:href="#/area" ng-href="#/area/{{area.id}}" ng-click="">
+				<circle ng-mouseover="notifyStart(area)" ng-mouseleave="notifyEnd()"  class="area cliquable"
+												cx="{{area.pos.x}}" cy="{{area.pos.y}}" r="{{getWeightedValueOf(area)}}" fill="" />
+			</a>
+			</g>
+			</svg>
+		</div>
+	</div>
+	<!-- /MAP -->
+	<ul class="rightSide">
+		<li><a ng-mouseover="notifyStart(guadeloupe)" ng-mouseleave="notifyEnd()" 
+									ng-href="#/area/{{guadeloupe.id}}" class="minimap"><img ng-src="img/minimap_{{guadeloupe.id}}.png"></a></li>
+		<li ng-repeat="sector in sectors"><a ng-mouseover="notifyStart(sector)" ng-mouseleave="notifyEnd()" 
+																																							ng-href="#/area/{{sector.id}}" class="minimap"><img ng-src="img/minimap_{{sector.id}}.png"></a></li>
+		<li class="pusher"></li>
+	</ul>
+	<!-- Notification area -->
+	<div id="notifier">
+		<h2 class="name">{{notification.lieuDit}} - {{notification.fragment}}</h2>
+		<h3 class="area">{{notification.commune}}</h3>
+		<p class="impact"><strong>{{getValueOf(notification)}}</strong> {{dataType}}</p>
+	</div>
+
+	<!-- /Notification area -->
 
 
 </div>

@@ -23,8 +23,8 @@
         CLASSES
 */
 .reset{
-    margin:0;
-    padding:0;
+	margin:0;
+	padding:0;
 }
 
 
@@ -32,114 +32,145 @@
         GLOBAL
 */
 *{
-    box-sizing:border-box;
-    font-family: 'Roboto';
-    transition:all 0.5s ease-in-out;
-    -webkit-transition:all 0.5s ease-in-out;
-    -moz-transition:all 0.5s ease-in-out;
-    -ms-transition:all 0.5s ease-in-out;
-    -o-transition:all 0.5s ease-in-out;
+	box-sizing:border-box;
+	font-family: 'Roboto';
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 }
 
 html,body,[ng-view]{
-    .reset;
-    height:100%;
-    background:@backgroundColor;
+	.reset;
+	height:100%;
+	background:@backgroundColor;
 }
 
 .svg_container{
-    text-align: center;
-    height:auto;
-    width:100%;
+	text-align: center;
+	height:auto;
+	width:100%;
 }
 
 .cliquable{
-    cursor: pointer; 
-    cursor: hand;
+	cursor: pointer; 
+	cursor: hand;
 }
 
 .hidden{
-    display:none;
+	display:none;
 }
 .visible{
-    display:inherit;
+	display:inherit;
 }
 
 .area{
-    fill:@impactColor;
-    &:hover,&.focus{
-        fill:lighten(@impactColor,20%);
-    }
+	fill:@impactColor;
+	&:hover,&.focus{
+		fill:lighten(@impactColor,20%);
+	}
 }
 
 #header{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    >.row{
-        .reset;
-        background:@headerColor;
-        height:@headerHeight;
-        display:flex;
-        align-items:center;
-        h1{
-            .reset;
-            margin:auto;
-            font-size:2em;
-            font-weight:300;
-            text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	>.row{
+		.reset;
+		background:@headerColor;
+		height:@headerHeight;
+		display:flex;
+		align-items:center;
+		h1{
+			.reset;
+			margin:auto;
+			font-size:2em;
+			font-weight:300;
+			text-align:center;
 
-        }
-        #logo img{
-            max-height:@headerHeight;
-        }
-    }
-    >.row.nav{
-        height:@rowHeight;
-        >li{
-            border:@borderHeight solid @borderColor;
-            border-left:@borderHeight/2 solid @borderColor;
-            height:@rowHeight;
+		}
+		#logo img{
+			max-height:@headerHeight;
+		}
+	}
+	>.row.nav{
+		height:@rowHeight;
+		>li{
+			/*border:@borderHeight solid @borderColor;
+			border-left:@borderHeight/2 solid @borderColor;
+			height:@rowHeight;*/
 
-            a{
-                height:100%;
-                margin:auto;
-                font-size:1.4em;
-                font-weight:500;
-                text-transform:uppercase;
-                color:@textColor;
-                padding:5px;
-                span{
-                    width:50%;
-                }
-            }
-            a:hover span,a:active span,a.current span{
-                border-bottom:@borderHeight*2 @impactColor solid;
-            }
+			a{
+				height:100%;
+				margin:auto;
+				font-size:1.4em;
+				font-weight:500;
+				text-transform:uppercase;
+				color:@textColor;
+				padding:5px;
+				span{
+					width:50%;
+				}
+			}
+			a:hover span,a:active span,a.current span{
+				border-bottom:@borderHeight*2 @impactColor solid;
+			}
 
-        }
-        >li:first-child{
-            border-left:0;
-        }
-        >li:last-child{
-            border-right:0;
-        }
-        text-align: center;
-    }
+		}
+		>li:first-child{
+			border-left:0;
+		}
+		>li:last-child{
+			border-right:0;
+		}
+		text-align: center;
+	}
 
-    h1{
-        .reset;
-        text-align:center;
-    }
+	h1{
+		.reset;
+		text-align:center;
+	}
 
 }
 
 #wrapper{
-    height:100%;
-    width:100%;
-    padding:@rowHeight;
-    padding-top:@rowHeight+@headerHeight+@rowHeight;
+	height:100%;
+	width:100%;
+	padding:@rowHeight;
+	padding-top:@rowHeight+@headerHeight+@rowHeight;
+}
+
+/* Animations */
+.view-animate-container {
+	position:relative;
+	overflow:hidden;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+}
+
+.view-animate.ng-enter {
+	-webkit-animation: fadeInRight 1s;
+	-webkit-animation-delay: 0s,1s;
+	animation: fadeInRight 1s;
+}
+.view-animate.ng-enter.ng-enter-active {
+	-webkit-animation: fadeInRight 1s;
+	-webkit-animation-delay: 0s;
+	animation: fadeInRight 1s;
+}
+/*
+.view-animate.ng-leave {
+	-webkit-animation: fadeOutLeft 1s, pulse 1s;
+	-webkit-animation-delay: 0s,1s;
+	animation: fadeOutLeft 1s;
+}*/
+.view-animate.ng-leave.ng-leave-active {
+	-webkit-animation: fadeOutLeft 1s;
+	-webkit-animation-delay: 0s;
+	animation: fadeOutleft 1s;
 }
 
 /* END - GLOBAL */
@@ -148,144 +179,148 @@ html,body,[ng-view]{
         View CARTE
 */
 #pieChart{
-    height:100%;
-    width:75%;
+	height:100%;
+	width:75%;
 }
 
 #wrapper.map{
-    display:flex;
-    flex-direction:row;
+	display:flex;
+	flex-direction:row;
 
-    &>.leftSide{
-        width:20%;
-        text-align:center;
+	&>.leftSide{
+		width:20%;
+		text-align:center;
 
-        h2{
-            .reset;
-            text-transform: uppercase;
-            font-size:1.4em;
-            font-weight: 500;
-        }
-        h3{
-            .reset;
-            margin-bottom: @rowHeight;
-            font-size:1.4em;
-            font-weight: 300;
-        }
+		.svg_container {
+			margin-top: 50%;
+		}
 
-        .legend {
-            .reset;
-            text-transform: uppercase;
+		h2{
+			.reset;
+			text-transform: uppercase;
+			font-size:1.4em;
+			font-weight: 500;
+		}
+		h3{
+			.reset;
+			margin-bottom: @rowHeight;
+			font-size:1.4em;
+			font-weight: 300;
+		}
 
-            padding-top:@rowHeight;
-            margin:auto;
-            display:flex;
-            flex-direction:column;
-            width:100%;
+		.legend {
+			.reset;
+			text-transform: uppercase;
 
-            &>li,a,a:hover,a:active{
-                .reset;
-                display:block;
-                width:100%;
-                text-align:left;
-                text-transform: uppercase;
-                font-size:0.8em;
-                text-decoration:none;
-                color:inherit;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                margin:@rowHeight/4 0;
-                text-align:left;
-                >span{
-                    display:inline-block;
-                    width:50%;
-                    height:20px;
-                    margin-left:10px;
-                }
-            }
+			padding-top:@rowHeight;
+			margin:auto;
+			display:flex;
+			flex-direction:column;
+			width:100%;
 
-        }
-    }
+			&>li,a,a:hover,a:active{
+				.reset;
+				display:block;
+				width:100%;
+				text-align:left;
+				text-transform: uppercase;
+				font-size:0.8em;
+				text-decoration:none;
+				color:inherit;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:@rowHeight/4 0;
+				text-align:left;
+				>span{
+					display:inline-block;
+					width:50%;
+					height:20px;
+					margin-left:10px;
+				}
+			}
 
-    #map{
-        flex:1;
-        min-width:50%;
-        padding-left:@rowHeight;
-        display:flex;
-        flex-align: center;
-        justify-content:middle;
+		}
+	}
 
-        #chart{
-            margin:auto;
-        }
+	#map{
+		flex:1;
+		min-width:50%;
+		padding-left:@rowHeight;
+		display:flex;
+		flex-align: center;
+		justify-content:middle;
 
-    }
-    >.rightSide{
-        width:205px;
-        height:100%;
-        min-height:400px;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-around;
-        align-items:flex-end;
+		#chart{
+			margin:auto;
+		}
 
-        >li{
-            display:block;
-            &.pusher{
-                height:100px;
-            }
-            a{
-                display:block;
-            }
-        }
+	}
+	>.rightSide{
+		width:205px;
+		height:100%;
+		min-height:400px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-around;
+		align-items:flex-end;
+
+		>li{
+			display:block;
+			&.pusher{
+				height:100px;
+			}
+			a{
+				display:block;
+			}
+		}
 
 
-    }
+	}
 }
 #notifier{
-    position:fixed;
-    bottom:0;
-    right:0;
-    padding-right:@rowHeight;
-    padding-bottom:@rowHeight/2;
-    opacity:0;
+	position:fixed;
+	bottom:0;
+	right:0;
+	padding-right:@rowHeight;
+	padding-bottom:@rowHeight/2;
+	opacity:0;
 
-    &.visible{
-        display:block;
-        opacity:1;
-    }
+	&.visible{
+		display:block;
+		opacity:1;
+	}
 
-    h2.name{
-        .reset;
-        font-size:2em;
-        font-weight:300;
-        text-transform:uppercase;
-    }
-    h3{
-        .reset;
-        font-size:1.4em;
-        font-weight:100;
-    }
-    .impact{
-        .reset;
-        font-size:1.4em;
-        font-weight:300;
-        text-transform:uppercase;
-        display:block;
-        width:auto;
-        background:@impactColor;
-        color:@borderColor;
-        padding:@rowHeight/6 @rowHeight/3;
-        margin:@rowHeight/6 @rowHeight/6 0 0;
-        position:relative;
-        left:-@rowHeight/3;
-        border-radius:20px;
+	h2.name{
+		.reset;
+		font-size:2em;
+		font-weight:300;
+		text-transform:uppercase;
+	}
+	h3{
+		.reset;
+		font-size:1.4em;
+		font-weight:100;
+	}
+	.impact{
+		.reset;
+		font-size:1.4em;
+		font-weight:300;
+		text-transform:uppercase;
+		display:block;
+		width:auto;
+		background:@impactColor;
+		color:@borderColor;
+		padding:@rowHeight/6 @rowHeight/3;
+		margin:@rowHeight/6 @rowHeight/6 0 0;
+		position:relative;
+		left:-@rowHeight/3;
+		border-radius:20px;
 
-        strong{
-            font-weight: 800;
-        }
-    }
+		strong{
+			font-weight: 800;
+		}
+	}
 }
 
 
@@ -293,113 +328,106 @@ html,body,[ng-view]{
         View area
 */
 #wrapper.area{
-    #infos{
-        display:flex;
-        flex-direction:row;
-        >div{
-            width:50%;
-            padding:@rowHeight;
+	#infos{
+		display:flex;
+		flex-direction:row;
+		>div{
+			width:50%;
+			padding:@rowHeight;
 
-            &.leftSide{
-                text-align:center;
-                height:200px;
-                >img{
-                    margin:auto;
-                    height:100%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-    #birds{
-        list-style:none;
-        padding:0;
-        margin:0 15%;
-        .bird{
-            list-style:none;
-            position:relative;
-            margin-bottom: 2*@rowHeight;
+			&.leftSide{
+				text-align:center;
+				height:200px;
+				>.svg_container{
+					margin:auto;
+					height:100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+	#birds{
+		list-style:none;
+		padding:0;
+		margin:0 15%;
+		.bird{
+			list-style:none;
+			position:relative;
+			margin-bottom: 2*@rowHeight;
 
-            &.false{
-                opacity:0.5;
-            }
+			&.false{
+				opacity:0.5;
+			}
 
-            img{
-                width:75%;
-                margin-top:-50%;
-            }
+			img{
+				width:75%;
+				margin-top:-50%;
+			}
 
-            &:before{
-                background: #ff0000;
-                content:" ";
-                display:none;
-                position:absolute;
-                left:-65px;
-                top:-200%;
-                width: 47px;
-                height: 96px;
-            }
-            &:nth-child(1):before{
-                display:block;
-                background: url('../img/png/medaille_or.png');
-            }
-            &:nth-child(2):before{
-                display:block;
-                background: url('../img/png/medaille_argent.png');
-            }
-            &:nth-child(3):before{
-                display:block;
-                background: url('../img/png/medaille_bronze.png');
-            }
+			&:before{
+				background: #ff0000;
+				content:" ";
+				display:none;
+				position:absolute;
+				left:-65px;
+				top:-200%;
+				width: 47px;
+				height: 96px;
+			}
+			&:nth-child(1):before{
+				display:block;
+				background: url('../img/png/medaille_or.png');
+			}
+			&:nth-child(2):before{
+				display:block;
+				background: url('../img/png/medaille_argent.png');
+			}
+			&:nth-child(3):before{
+				display:block;
+				background: url('../img/png/medaille_bronze.png');
+			}
 
-            .rightSide{
-                height: 100%;
-            }
-        }
-    }
-    .percentage-bar{
-        display:inline-block;
-        height:20px;
-        background: #c51919;
-    }
-    .ng-binding {
-        color: #333;
-        font-family: 'Roboto';
-    }
-    h2.ng-binding {
-        text-transform: uppercase;
-    }
+			.rightSide{
+				height: 100%;
+			}
+		}
+	}
+	.percentage-bar{
+		display:inline-block;
+		height:20px;
+		background: #c51919;
+	}
+	.ng-binding {
+		color: #333;
+		font-family: 'Roboto';
+	}
+	h2.ng-binding {
+		text-transform: uppercase;
+	}
 }
 
 /******** CSS Elodie **********/
 
 .oiseauIndex {
-    position: absolute;
-    width: 35%;
-    height: 18%;
-    display: flex;
-    align-items: flex-end; 
-    img {
-        display: block;
-        height: 100%;
-        position: relative;
-        float: left;
-    }
-    h2 {
-        text-align: right;
-    }
+	position: absolute;
+	width: 35%;
+	height: 18%;
+	display: flex;
+	align-items: flex-end; 
+	img {
+		display: block;
+		height: 100%;
+		position: relative;
+		float: left;
+	}
+	h2 {
+		text-align: right;
+	}
 
-    h3 {
-        text-align: right;
-    }
-    .descriptionOiseau {
-       float: right;
-    }
-}
-
-.leftSide {
-    margin-top: -20px;
-    .svg_container {
-        margin-top: 50%;
-    }
+	h3 {
+		text-align: right;
+	}
+	.descriptionOiseau {
+		float: right;
+	}
 }

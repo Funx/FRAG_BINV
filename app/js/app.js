@@ -4,6 +4,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
     'ngRoute',
+    'ngAnimate',
     'myApp.filters',
     'myApp.services',
     'myApp.directives',
@@ -21,9 +22,9 @@ angular.module('myApp', [
                     controller: 'mapCtrl'
                 });
 
-                $routeProvider.when('/map/:datatype/:specy', {
+                $routeProvider.when('/bird/:specy', {
                     templateUrl: 'partials/map.html',
-                    controller: 'mapCtrl'
+                    controller: 'birdsCtrl'
                 });
 
                 $routeProvider.when('/area', {

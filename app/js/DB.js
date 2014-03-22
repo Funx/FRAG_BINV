@@ -109,7 +109,6 @@ var DB = {
 			for(espece in secteur.count){
 				secteur.countPerHour[espece]=Math.round(secteur.count[espece]/secteur.h_filet*100)/100;
 			}
-			console.log(secteur.countPerHour);
 			secteurs.push(secteur);
 		}
 		guadeloupe.diversity = Object.keys(guadeloupe.species).length;
