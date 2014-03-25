@@ -17,7 +17,29 @@
 
 @impactColor:#c51919;
 
-@rowHeight:44px;
+@rowHeight:60px;
+
+/*
+								Animations			
+*/
+.view-animate{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.view-animate.ng-enter{
+	animation: fadeIn 0.5s ease-in-out;
+	-webkit-animation: fadeIn 0.5s ease-in-out;
+}
+.view-animate.ng-leave{
+	animation: fadeOut 0.5s ease-in-out;
+	-webkit-animation: fadeOut 0.5s ease-in-out;
+}
+
+
 
 /*
         CLASSES
@@ -98,9 +120,9 @@ html,body,[ng-view]{
 	>.row.nav{
 		height:@rowHeight;
 		>li{
-			/*border:@borderHeight solid @borderColor;
+			border:@borderHeight solid @borderColor;
 			border-left:@borderHeight/2 solid @borderColor;
-			height:@rowHeight;*/
+			height:@rowHeight;
 
 			a{
 				height:100%;
@@ -137,40 +159,9 @@ html,body,[ng-view]{
 
 #wrapper{
 	height:100%;
-	width:100%;
+	width:80%;
 	padding:@rowHeight;
 	padding-top:@rowHeight+@headerHeight+@rowHeight;
-}
-
-/* Animations */
-.view-animate-container {
-	position:relative;
-	overflow:hidden;
-}
-
-.view-animate.ng-enter, .view-animate.ng-leave {
-}
-
-.view-animate.ng-enter {
-	-webkit-animation: fadeInRight 1s;
-	-webkit-animation-delay: 0s,1s;
-	animation: fadeInRight 1s;
-}
-.view-animate.ng-enter.ng-enter-active {
-	-webkit-animation: fadeInRight 1s;
-	-webkit-animation-delay: 0s;
-	animation: fadeInRight 1s;
-}
-/*
-.view-animate.ng-leave {
-	-webkit-animation: fadeOutLeft 1s, pulse 1s;
-	-webkit-animation-delay: 0s,1s;
-	animation: fadeOutLeft 1s;
-}*/
-.view-animate.ng-leave.ng-leave-active {
-	-webkit-animation: fadeOutLeft 1s;
-	-webkit-animation-delay: 0s;
-	animation: fadeOutleft 1s;
 }
 
 /* END - GLOBAL */
@@ -190,10 +181,6 @@ html,body,[ng-view]{
 	&>.leftSide{
 		width:20%;
 		text-align:center;
-
-		.svg_container {
-			margin-top: 50%;
-		}
 
 		h2{
 			.reset;
@@ -338,7 +325,7 @@ html,body,[ng-view]{
 			&.leftSide{
 				text-align:center;
 				height:200px;
-				>.svg_container{
+				>img{
 					margin:auto;
 					height:100%;
 					text-align: center;
@@ -411,7 +398,7 @@ html,body,[ng-view]{
 .oiseauIndex {
 	position: absolute;
 	width: 35%;
-	height: 18%;
+	height: 22%;
 	display: flex;
 	align-items: flex-end; 
 	img {
@@ -430,4 +417,66 @@ html,body,[ng-view]{
 	.descriptionOiseau {
 		float: right;
 	}
+}
+
+.leftSide {
+	margin-top: -20px;
+	.svg_container {
+		margin-top: 80%;
+	}
+}
+
+.menuOiseaux {
+	background: #a2ced9;
+	height: 100%;
+	border-right: 3px solid white; 
+	padding-top: @headerHeight;
+	width: 20%;
+	float: left;
+
+	a {
+		color: black;
+		display:block;
+		width:100%;
+		height:100%;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+
+	.populationTotale {
+		text-transform: uppercase;
+		font-family: 'Roboto';
+		padding-top: 6%;
+		text-align: center;
+		font-weight: bold;
+		font-size: 15px;
+		border-bottom: 3px solid white;
+		height: 10%;
+	}
+	.populationTotale:hover {
+		background: #eee;
+		border-left: 6px solid #c51919;
+	}
+	.oiseaux {
+		height: 90%;
+		overflow-y: scroll;
+		ul{
+			list-style: none;
+			padding: 0;
+		}
+		li {
+			padding: 5px 20px;
+			font-size: 13px;
+			img {
+				height: 50px;
+			}
+		}
+		li:hover {
+			background: #eee;
+			border-left: 6px solid #c51919;
+		}
+	}
+
+
 }

@@ -1,4 +1,22 @@
 'use strict';
+
+// ROOOOT
+$rootScope.birds = DB.getBirds();
+$rootScope.areas = DB.getAreas();
+$rootScope.sectors = DB.getSectors();
+$rootScope.sectors[1].color = "#46764e";
+$rootScope.sectors[2].color = "#9eb353";
+$rootScope.guadeloupe = $scope.sectors.splice(0, 1)[0];
+
+$rootScope.displayMenu = true;
+$rootScope.displayPhoto = false;
+$rootScope.displayPreviousButton = false;
+$rootScope.states = {
+	diversityLink: 'current'
+	, populationLink: null
+};
+
+
 /* Controllers */
 
 var controllers = angular.module('myApp.controllers', []);
@@ -15,21 +33,17 @@ controllers.controller('mapCtrl', function($routeParams, $scope, $http) {
 	var $notifier = $("#notifier");
 	$scope.app = app;
 
-	$scope.displayMenu = true;
-	$scope.displayPhoto = false;
-	$scope.displayPreviousButton = false;
+	$rootScope.displayMenu = true;
+	$rootScope.displayPhoto = false;
+	$rootScope.displayPreviousButton = false;
 
-	$scope.states = {
+	$rootScope.states = {
 		diversityLink: 'current'
 		, populationLink: null
 	};
 
-	$scope.areas = DB.getAreas();
-	$scope.sectors = DB.getSectors();
-	$scope.sectors[1].color = "#46764e";
-	$scope.sectors[2].color = "#9eb353";
-	$scope.guadeloupe = $scope.sectors.splice(0, 1)[0];
-	var taffyAreas = TAFFY(DB.getAreas());
+	var taffyAreas = TAFFY($rootScope.areas);
+	$scope.areas = $rootScope.areas;
 
 	$scope.diversity = {
 		min: taffyAreas().min('diversity')
@@ -145,8 +159,8 @@ controllers.controller('areaCtrl', function($scope, $routeParams) {
 
 	$scope.area = DB.getAllAreas({id: $scope.id})[0];
 
-	$scope.title=$scope.area.lieuDit;
-	
+	$scope.title = $scope.area.lieuDit;
+
 	console.log($scope.area);
 
 	$scope.mapInit = function() {
@@ -195,6 +209,8 @@ controllers.controller('birdsCtrl', function($routeParams, $scope, $http) {
 		diversityLink: null
 		, populationLink: null
 	};
+
+	$scope.birds = DB.getBirds();
 
 	$scope.areas = DB.getAreas();
 	$scope.sectors = DB.getSectors();

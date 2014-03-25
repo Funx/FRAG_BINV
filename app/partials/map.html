@@ -15,6 +15,22 @@
 </header>
 <!-- /HEADER -->
 
+<!-- modif MENU -->
+<div class="menuOiseaux">
+	<div class="populationTotale"><a href="#">Population totale</a></div>
+	<div class="oiseaux">
+		<ul>
+			<li ng-repeat="bird in birds">
+				<a ng-href="#/bird/{{bird.id}}">
+					<img src="img/svg/oiseaux_{{bird.id}}">
+					{{bird.name}}
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- /modif /MENU -->
+
 <!-- WRAPPER -->
 <div class="row
      map"
@@ -23,7 +39,7 @@
 
 	<div class="leftSide">
 		<div class="oiseauIndex"> 
-			<img ng-if='displayPhoto' src="img/svg/oiseaux_{{specy.id}}.svg" alt="oiseau">
+			<img src="img/svg/oiseaux_{{specy.id}}.svg" alt="oiseau">
 			<div class="descriptionOiseau">
 				<h2>{{title}}</h2>
 				<h3>{{subtitle}}</h3>
