@@ -1,67 +1,54 @@
-<!-- HEADER -->
-<header class="container-fluid"
-        id="header">
-	<div class="row">
-		<a id="logo" ng-href="index.html">
-			<img src="img/ui_carret_left.png" class="{{carretLeft.state}}">
-				<img src="img/logo.png">
-					</a> 
-					<h1>{{title}}</h1>
-					</div>
-					</header>
-					<!-- /HEADER -->
+<!-- WRAPPER -->
+<div class="row
+					area"
+					id="wrapper">
+	<div class='row'
+						id='infos'>	
+		<div class='leftSide'>
+			<!-- MAP -->
+			<a ng-href='#/map'>
+				<div class="svg_container" ng-if='displaySvg' ng-init='mapInit()'>
+					<svg id="mapChart" width="100%" height="100%" viewBox="0 0 507 510" preserveAspectRatio="xMaxYmax" 
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+						<image x="0" y="0" width='100%' height='100%' xlink:href="img/map.svg" />
+						<g>
+							<circle cx="{{area.pos.x}}" cy="{{area.pos.y}}" r="20" fill="#fff" />
+						</g>
+					</svg>
+				</div>
+				<img ng-src='img/minimap_{{area.id}}.png' ng-if='displayMiniMap'>
+			</a>
+			<!-- /MAP -->
+		</div>
+		<div>
+			<h2>{{area.lieuDit}}</h2>
+			<h3>{{area.commune}}</h3>
+			<div id="filterBirds">
+				<input name="projet" type="checkbox" ng-click="showBirdsInProject()"><label>N'afficher que les espèces concernées par le projet.</label>
+			</div>
+			<p><strong>{{area.population}}</strong> oiseaux capturés</p>
+			<p><strong>{{area.h_filet}}</strong> heures filet</p>
+			<p class='impact'><strong>{{area.diversity}}</strong> espèces</p>
 
-					<!-- WRAPPER -->
-					<div class="row
-										area"
-										id="wrapper">
-						<div class='row'
-											id='infos'>	
-							<div class='leftSide'>
-								<!-- MAP -->
-								<a ng-href='#/map'>
-									<div class="svg_container" ng-if='displaySvg' ng-init='mapInit()'>
-										<svg id="mapChart" width="100%" height="100%" viewBox="0 0 507 510" preserveAspectRatio="xMaxYmax" 
-															xmlns="http://www.w3.org/2000/svg"
-															xmlns:xlink="http://www.w3.org/1999/xlink">
-											<image x="0" y="0" width='100%' height='100%' xlink:href="img/map.svg" />
-											<g>
-												<circle cx="{{area.pos.x}}" cy="{{area.pos.y}}" r="50" fill="#fff" />
-											</g>
-										</svg>
-									</div>
-									<img ng-src='img/minimap_{{area.id}}.png' ng-if='displayMiniMap'>
-								</a>
-								<!-- /MAP -->
-							</div>
-							<div>
-								<h2>{{area.lieuDit}}</h2>
-								<h3>{{area.commune}}</h3>
-								<div id="filterBirds">
-									<input name="projet" type="checkbox" ng-click="showBirdsInProject()"><label>N'afficher que les espèces concernées par le projet.</label>
-								</div>
-								<p><strong>{{area.population}}</strong> oiseaux capturés</p>
-								<p><strong>{{area.h_filet}}</strong> heures filet</p>
-								<p class='impact'><strong>{{area.diversity}}</strong> espèces</p>
+		</div>
+	</div>
+	<ul class='row' id='birds'>
+		<li class='row bird {{bird.isInProject}}' ng-repeat="bird in birds| orderBy:'population':true">
+			<a ng-href='#/bird/{{bird.id}}'>
+				<span class="col-lg-2">
+					<img ng-src='img/svg/oiseaux_{{bird.id}}.svg'>
+				</span>
+				<span class='col-lg-2'>
 
-							</div>
-						</div>
-						<ul class='row' id='birds'>
-							<li class='row bird {{bird.isInProject}}' ng-repeat="bird in birds| orderBy:'population':true">
-								<a ng-href='#/bird/{{bird.id}}'>
-									<span class="col-lg-2">
-										<img ng-src='img/svg/oiseaux_{{bird.id}}.svg'>
-									</span>
-									<span class='col-lg-2'>
-
-										{{bird.name}}
-									</span>
-									<span class='col-lg-8 rightSide'>
-										<span class='percentage-bar' style='width:{{getPopulationRateOf(bird) * 2}}%'></span>
-										{{bird.population}} captures | {{getPopulationRateOf(bird)}}% 
-									</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- /WRAPPER -->
+					{{bird.name}}
+				</span>
+				<span class='col-lg-8 rightSide'>
+					<span class='percentage-bar' style='width:{{getPopulationRateOf(bird) * 2}}%'></span>
+					{{bird.population}} captures | {{getPopulationRateOf(bird)}}% 
+				</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- /WRAPPER -->

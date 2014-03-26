@@ -1,6 +1,8 @@
 var PieChart = {
-	init: function(pieData, $scope) {
-		var paper = Snap("#pieChart");
+	init: function($scope) {
+		var pieData =$scope.sectors;
+		var paper = Snap(".pieChart");
+		console.log(Snap(".pieChart"));
 		var diameter = 400;
 		var radius = diameter / 2;
 		var center = {
@@ -20,10 +22,8 @@ var PieChart = {
 		this.name = pieData.name;
 		this.arcs = [];
 
-
 		for (var i = 0; i < pieData.length; i++) {
 			var sector = pieData[i];
-			console.log($scope);
 			numbers.push($scope.getValueOf(sector));
 		}
 
@@ -36,7 +36,6 @@ var PieChart = {
 			var angle = Math.ceil(360 * numbers[i] / total);
 			sectorAngleArr.push(angle);
 		}
-
 
 		for (var i = 0; i < sectorAngleArr.length; i++) {
 			startAngle = endAngle;
@@ -74,7 +73,6 @@ var PieChart = {
 													$scope.notifyEnd(app.notification);
 												});
 											});
-
 
 											this.arcs.push(arc);
 										}
