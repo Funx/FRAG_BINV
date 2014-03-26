@@ -1,65 +1,87 @@
 <!doctype html>
 <html lang="fr" ng-app="myApp">
-	<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-  <title>Répartition des oiseaux en Guadeloupe | Projet FRAG & BINV</title>
+        <title>Répartition des oiseaux en Guadeloupe | Projet FRAG & BINV</title>
 
-		<!-- Font : roboto -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Font : roboto -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="lib/twitter-bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="lib/twitter-bootstrap/css/bootstrap.min.css"/>
 
-  <link rel="stylesheet" href="css/animate.css"/>
-  <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/app.css"/>
 
-	</head>
-	<body class="view-animate-container">
-		<!-- HEADER -->
-		<header class="container-fluid"
-										id="header">
-			<div class="row">
-				<a id="logo" ng-href="index.html">
-					<img src="img/logo.png">
-				</a> 
-				<h1>{{app.title}}</h1>
-			</div>
-		</header>
+    </head>
+    <body class="view-animate-container" ng-controller="globalCtrl">
 
-		<!-- VIEW -->
-		<div ng-view class="view-animate">
+        <!-- HEADER -->
+        <header class="container-fluid"
+                id="header">
+            <div class="row">
+                <a id="logo" ng-href="index.html">
+                    <img src="img/logo.png">
+                </a> 
+                <h1>{{title}}</h1>
+            </div>
+            <div class="menuOiseaux">
+                <div class="populationTotale"><a href="#">Toutes espèces confondues</a></div>
+                <div class="oiseaux">
+                    <ul>
+                        <li ng-repeat="bird in birds">
+                            <a ng-href="#/bird/{{bird.id}}">
+                                <img src="img/svg/oiseaux_{{bird.id}}.svg">
+                                {{bird.name}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <ul ng-if='displayMenu' class="row 
+                nav">
+                <li class="col-xs-6"><a href="#/map/population" class="cliquable {{states.populationLink}}"><span>Population</span></a></li>
+                <li class="col-xs-6"><a href="#/map/diversity" class="cliquable {{states.diversityLink}}"><span>Diversité</span></a></li>
+            </ul>
 
-		</div>
-		<!-- /VIEW -->
+        </header>
+        <!-- /HEADER -->
+
+        <!-- VIEW -->
+        <div ng-view class="view-animate">
+
+        </div>
+        <!-- /VIEW -->
 
 
-		<script src="lib/jquery/jquery.js"></script>
-		<script src="lib/snap.svg/snap.svg.js"></script>
-		<script src="lib/snap.svg/snap.svg.js"></script>
-		<script src="lib/taffydb/taffy.js"></script>
+        <script src="lib/jquery/jquery.js"></script>
+        <script src="lib/snap.svg/snap.svg.js"></script>
+        <script src="lib/snap.svg/snap.svg.js"></script>
+        <script src="lib/taffydb/taffy.js"></script>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+        -->
 
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="lib/angular/angular-animate.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="lib/angular/angular-animate.js"></script>
 
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>
 
-		<script src="js/Utility.js"></script>
-		<script src="js/PieChart.js"></script>
-		<script src="js/MapChart.js"></script>
-		<script src="js/DB.js"></script>
+        <script src="js/Utility.js"></script>
+        <script src="js/PieChart.js"></script>
+        <script src="js/MapChart.js"></script>
+        <script src="js/DB.js"></script>
 
-		<script src="js/areas.js"></script>	
-		<script src="js/birds.js"></script>	
+        <script src="js/areas.js"></script>	
+        <script src="js/birds.js"></script>	
 
-		<script src="js/app.js"></script>
+        <script src="js/app.js"></script>
 
-	</body>
+    </body>
 </html>

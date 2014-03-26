@@ -6,10 +6,8 @@
         VARS
 */
 /*
-								Animations			
+                                                                Animations			
 */
-/* line 25, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000325}}
 .view-animate {
   position: absolute;
   top: 0;
@@ -17,14 +15,10 @@
   width: 100%;
   height: 100%;
 }
-/* line 33, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000333}}
 .view-animate.ng-enter {
   animation: fadeIn 0.5s ease-in-out;
   -webkit-animation: fadeIn 0.5s ease-in-out;
 }
-/* line 37, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000337}}
 .view-animate.ng-leave {
   animation: fadeOut 0.5s ease-in-out;
   -webkit-animation: fadeOut 0.5s ease-in-out;
@@ -32,8 +26,6 @@
 /*
         CLASSES
 */
-/* line 47, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000347}}
 .reset {
   margin: 0;
   padding: 0;
@@ -41,8 +33,6 @@
 /*
         GLOBAL
 */
-/* line 56, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000356}}
 * {
   box-sizing: border-box;
   font-family: 'Roboto';
@@ -52,8 +42,6 @@
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 }
-/* line 66, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000366}}
 html,
 body,
 [ng-view] {
@@ -62,60 +50,45 @@ body,
   height: 100%;
   background: #c7e2e8;
 }
-/* line 72, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000372}}
 .svg_container {
   text-align: center;
   height: auto;
   width: 100%;
 }
-/* line 78, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000378}}
 .cliquable {
   cursor: pointer;
   cursor: hand;
 }
-/* line 83, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000383}}
 .hidden {
   display: none;
 }
-/* line 86, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000386}}
 .visible {
   display: inherit;
 }
-/* line 90, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000390}}
 .area {
   fill: #c51919;
 }
-/* line 92, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000392}}
 .area:hover,
 .area.focus {
   fill: #ea5a5a;
 }
-/* line 97, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\0000397}}
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
 }
-/* line 102, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003102}}
 #header > .row {
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 99;
   background: #a2ced9;
   height: 88px;
   display: flex;
   align-items: center;
 }
-/* line 108, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003108}}
 #header > .row h1 {
   margin: 0;
   padding: 0;
@@ -124,26 +97,21 @@ body,
   font-weight: 300;
   text-align: center;
 }
-/* line 116, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003116}}
 #header > .row #logo img {
   max-height: 88px;
 }
-/* line 120, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003120}}
 #header > .row.nav {
+  position: relative;
+  z-index: 9;
   height: 60px;
+  padding-left: 20%;
   text-align: center;
 }
-/* line 122, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003122}}
 #header > .row.nav > li {
   border: 3px solid #ffffff;
   border-left: 1.5px solid #ffffff;
   height: 60px;
 }
-/* line 127, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003127}}
 #header > .row.nav > li a {
   height: 100%;
   margin: auto;
@@ -151,42 +119,28 @@ body,
   font-weight: 500;
   text-transform: uppercase;
   color: #333333;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
 }
-/* line 135, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003135}}
-#header > .row.nav > li a span {
-  width: 50%;
-}
-/* line 139, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003139}}
-#header > .row.nav > li a:hover span,
-#header > .row.nav > li a:active span,
-#header > .row.nav > li a.current span {
+#header > .row.nav > li a:hover,
+#header > .row.nav > li a:active,
+#header > .row.nav > li a.current {
   border-bottom: 6px #c51919 solid;
 }
-/* line 144, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003144}}
 #header > .row.nav > li:first-child {
   border-left: 0;
 }
-/* line 147, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003147}}
 #header > .row.nav > li:last-child {
   border-right: 0;
 }
-/* line 153, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003153}}
 #header h1 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 160, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003160}}
 #wrapper {
   height: 100%;
-  width: 80%;
+  width: 100%;
   padding: 60px;
   padding-top: 208px;
 }
@@ -194,26 +148,20 @@ body,
 /*
         View CARTE
 */
-/* line 172, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003172}}
 #pieChart {
   height: 100%;
   width: 75%;
 }
-/* line 177, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003177}}
 #wrapper.map {
   display: flex;
   flex-direction: row;
+  padding-left: 20%;
 }
-/* line 181, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003181}}
 #wrapper.map > .leftSide {
+  margin-left: 60px;
   width: 20%;
   text-align: center;
 }
-/* line 185, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003185}}
 #wrapper.map > .leftSide h2 {
   margin: 0;
   padding: 0;
@@ -221,8 +169,6 @@ body,
   font-size: 1.4em;
   font-weight: 500;
 }
-/* line 191, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003191}}
 #wrapper.map > .leftSide h3 {
   margin: 0;
   padding: 0;
@@ -230,8 +176,6 @@ body,
   font-size: 1.4em;
   font-weight: 300;
 }
-/* line 198, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003198}}
 #wrapper.map > .leftSide .legend {
   margin: 0;
   padding: 0;
@@ -242,8 +186,6 @@ body,
   flex-direction: column;
   width: 100%;
 }
-/* line 208, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003208}}
 #wrapper.map > .leftSide .legend > li,
 #wrapper.map > .leftSide .legend a,
 #wrapper.map > .leftSide .legend a:hover,
@@ -262,8 +204,6 @@ body,
   margin: 15px 0;
   text-align: left;
 }
-/* line 222, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003222}}
 #wrapper.map > .leftSide .legend > li > span,
 #wrapper.map > .leftSide .legend a > span,
 #wrapper.map > .leftSide .legend a:hover > span,
@@ -273,8 +213,6 @@ body,
   height: 20px;
   margin-left: 10px;
 }
-/* line 233, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003233}}
 #wrapper.map #map {
   flex: 1;
   min-width: 50%;
@@ -283,13 +221,9 @@ body,
   flex-align: center;
   justify-content: middle;
 }
-/* line 241, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003241}}
 #wrapper.map #map #chart {
   margin: auto;
 }
-/* line 246, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003246}}
 #wrapper.map > .rightSide {
   width: 205px;
   height: 100%;
@@ -299,23 +233,15 @@ body,
   justify-content: space-around;
   align-items: flex-end;
 }
-/* line 255, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003255}}
 #wrapper.map > .rightSide > li {
   display: block;
 }
-/* line 257, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003257}}
 #wrapper.map > .rightSide > li.pusher {
   height: 100px;
 }
-/* line 260, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003260}}
 #wrapper.map > .rightSide > li a {
   display: block;
 }
-/* line 268, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003268}}
 #notifier {
   position: fixed;
   bottom: 0;
@@ -324,14 +250,10 @@ body,
   padding-bottom: 30px;
   opacity: 0;
 }
-/* line 276, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003276}}
 #notifier.visible {
   display: block;
   opacity: 1;
 }
-/* line 281, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003281}}
 #notifier h2.name {
   margin: 0;
   padding: 0;
@@ -339,16 +261,12 @@ body,
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 287, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003287}}
 #notifier h3 {
   margin: 0;
   padding: 0;
   font-size: 1.4em;
   font-weight: 100;
 }
-/* line 292, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003292}}
 #notifier .impact {
   margin: 0;
   padding: 0;
@@ -365,66 +283,46 @@ body,
   left: -20px;
   border-radius: 20px;
 }
-/* line 307, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003307}}
 #notifier .impact strong {
   font-weight: 800;
 }
 /*
         View area
 */
-/* line 318, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003318}}
 #wrapper.area #infos {
   display: flex;
   flex-direction: row;
 }
-/* line 321, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003321}}
 #wrapper.area #infos > div {
   width: 50%;
   padding: 60px;
 }
-/* line 325, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003325}}
 #wrapper.area #infos > div.leftSide {
   text-align: center;
   height: 200px;
 }
-/* line 328, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003328}}
 #wrapper.area #infos > div.leftSide > img {
   margin: auto;
   height: 100%;
   text-align: center;
 }
-/* line 336, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003336}}
 #wrapper.area #birds {
   list-style: none;
   padding: 0;
   margin: 0 15%;
 }
-/* line 340, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003340}}
 #wrapper.area #birds .bird {
   list-style: none;
   position: relative;
   margin-bottom: 120px;
 }
-/* line 345, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003345}}
 #wrapper.area #birds .bird.false {
   opacity: 0.5;
 }
-/* line 349, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003349}}
 #wrapper.area #birds .bird img {
   width: 75%;
   margin-top: -50%;
 }
-/* line 354, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003354}}
 #wrapper.area #birds .bird:before {
   background: #ff0000;
   content: " ";
@@ -435,50 +333,34 @@ body,
   width: 47px;
   height: 96px;
 }
-/* line 364, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003364}}
 #wrapper.area #birds .bird:nth-child(1):before {
   display: block;
   background: url('../img/png/medaille_or.png');
 }
-/* line 368, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003368}}
 #wrapper.area #birds .bird:nth-child(2):before {
   display: block;
   background: url('../img/png/medaille_argent.png');
 }
-/* line 372, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003372}}
 #wrapper.area #birds .bird:nth-child(3):before {
   display: block;
   background: url('../img/png/medaille_bronze.png');
 }
-/* line 377, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003377}}
 #wrapper.area #birds .bird .rightSide {
   height: 100%;
 }
-/* line 382, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003382}}
 #wrapper.area .percentage-bar {
   display: inline-block;
   height: 20px;
   background: #c51919;
 }
-/* line 387, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003387}}
 #wrapper.area .ng-binding {
   color: #333;
   font-family: 'Roboto';
 }
-/* line 391, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003391}}
 #wrapper.area h2.ng-binding {
   text-transform: uppercase;
 }
 /******** CSS Elodie **********/
-/* line 398, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003398}}
 .oiseauIndex {
   position: absolute;
   width: 35%;
@@ -486,105 +368,82 @@ body,
   display: flex;
   align-items: flex-end;
 }
-/* line 404, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003404}}
 .oiseauIndex img {
   display: block;
   height: 100%;
   position: relative;
   float: left;
 }
-/* line 410, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003410}}
 .oiseauIndex h2 {
   text-align: right;
 }
-/* line 414, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003414}}
 .oiseauIndex h3 {
   text-align: right;
 }
-/* line 417, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003417}}
 .oiseauIndex .descriptionOiseau {
   float: right;
 }
-/* line 422, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003422}}
 .leftSide {
   margin-top: -20px;
 }
-/* line 424, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003424}}
 .leftSide .svg_container {
   margin-top: 80%;
 }
-/* line 429, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003429}}
+header {
+  height: 100%;
+  pointer-events: none;
+}
+header * {
+  pointer-events: auto;
+}
 .menuOiseaux {
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  padding-top: 88px;
   background: #a2ced9;
   height: 100%;
   border-right: 3px solid white;
-  padding-top: 88px;
   width: 20%;
   float: left;
 }
-/* line 437, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003437}}
 .menuOiseaux a {
   color: black;
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 443, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003443}}
 .menuOiseaux a:hover {
   text-decoration: none;
 }
-/* line 447, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003447}}
 .menuOiseaux .populationTotale {
   text-transform: uppercase;
   font-family: 'Roboto';
-  padding-top: 6%;
   text-align: center;
   font-weight: bold;
   font-size: 15px;
   border-bottom: 3px solid white;
-  height: 10%;
+  height: 60px;
 }
-/* line 457, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003457}}
 .menuOiseaux .populationTotale:hover {
   background: #eee;
   border-left: 6px solid #c51919;
 }
-/* line 461, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003461}}
 .menuOiseaux .oiseaux {
-  height: 90%;
+  height: 100%;
   overflow-y: scroll;
 }
-/* line 464, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003464}}
 .menuOiseaux .oiseaux ul {
   list-style: none;
   padding: 0;
 }
-/* line 468, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003468}}
 .menuOiseaux .oiseaux li {
   padding: 5px 20px;
   font-size: 13px;
 }
-/* line 471, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003471}}
 .menuOiseaux .oiseaux li img {
   height: 50px;
 }
-/* line 475, E:\weblocal\Projet FRAG BINV\app\less\app.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003475}}
 .menuOiseaux .oiseaux li:hover {
   background: #eee;
   border-left: 6px solid #c51919;
