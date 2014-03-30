@@ -159,7 +159,7 @@ a:hover {
   height: 88px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 /* line 140, E:\weblocal\Projet FRAG BINV\app\less\app.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003140}}
@@ -188,8 +188,8 @@ a:hover {
 /* line 157, E:\weblocal\Projet FRAG BINV\app\less\app.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003157}}
 #header > .row.nav > li {
-  border-bottom: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
   height: 60px;
 }
 /* line 162, E:\weblocal\Projet FRAG BINV\app\less\app.less */
@@ -209,7 +209,7 @@ a:hover {
 #header > .row.nav > li a:hover,
 #header > .row.nav > li a:active,
 #header > .row.nav > li a.current {
-  border-bottom: 2px #c51919 solid;
+  border-bottom: 6px #c51919 solid;
 }
 /* line 177, E:\weblocal\Projet FRAG BINV\app\less\app.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/weblocal\/Projet FRAG BINV\/app\/less\/app\.less}line{font-family:\00003177}}
@@ -576,7 +576,7 @@ a:hover {
   padding-top: 88px;
   background: #a2ced9;
   height: 100%;
-  border-right: 1px solid #ffffff;
+  border-right: 3px solid #ffffff;
   width: 20%;
   float: left;
 }
@@ -601,7 +601,7 @@ a:hover {
   text-align: center;
   font-weight: bold;
   font-size: 15px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   height: 60px;
   padding-top: 20px;
 }
