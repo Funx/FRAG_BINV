@@ -3,80 +3,73 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
-    'ngRoute',
-    'ngAnimate',
-    'myApp.filters',
-    'myApp.services',
-    'myApp.directives',
-    'myApp.controllers'
+	'ngRoute',
+	'ngAnimate',
+	'myApp.filters',
+	'myApp.services',
+	'myApp.directives',
+	'myApp.controllers'
 ]).
-        config(['$routeProvider', function($routeProvider) {
+								config(['$routeProvider', function($routeProvider) {
+/*
+										$routeProvider.when('/', {
+											templateUrl: 'partials/home.html',
+											controller: 'homeCtrl'
+										});*/
+										
+										$routeProvider.when('/map', {
+											templateUrl: 'partials/map.html',
+											controller: 'mapCtrl'
+										});
 
-                $routeProvider.when('/map', {
-                    templateUrl: 'partials/map.html',
-                    controller: 'mapCtrl'
-                });
+										$routeProvider.when('/map/:datatype', {
+											templateUrl: 'partials/map.html',
+											controller: 'mapCtrl'
+										});
 
-                $routeProvider.when('/map/:datatype', {
-                    templateUrl: 'partials/map.html',
-                    controller: 'mapCtrl'
-                });
+										$routeProvider.when('/bird/:specy', {
+											templateUrl: 'partials/map.html',
+											controller: 'birdsCtrl'
+										});
 
-                $routeProvider.when('/bird/:specy', {
-                    templateUrl: 'partials/map.html',
-                    controller: 'birdsCtrl'
-                });
+										$routeProvider.when('/area', {
+											templateUrl: 'partials/area.html',
+											controller: 'areaCtrl'
+										});
 
-                $routeProvider.when('/area', {
-                    templateUrl: 'partials/area.html',
-                    controller: 'areaCtrl'
-                });
+										$routeProvider.when('/area/:area', {
+											templateUrl: 'partials/area.html',
+											controller: 'areaCtrl'
+										});
 
-                $routeProvider.when('/area/:area', {
-                    templateUrl: 'partials/area.html',
-                    controller: 'areaCtrl'
-                });
-
-                $routeProvider.otherwise({redirectTo: '/map'});
-            }]);
+										$routeProvider.otherwise({redirectTo: '/map'});
+									}]);
 
 var myApp = angular.module('Svgs', []);
 
 angular.forEach([
-    {ngAttrName: 'ngXlinkHref', attrName: 'xlink:href'},
-    {ngAttrName: 'ngWidth', attrName: 'width'},
-    {ngAttrName: 'ngHeight', attrName: 'height'}
+	{ngAttrName: 'ngXlinkHref', attrName: 'xlink:href'},
+	{ngAttrName: 'ngWidth', attrName: 'width'},
+	{ngAttrName: 'ngHeight', attrName: 'height'}
 ], function(pair) {
 
-    var ngAttrName = pair.ngAttrName;
-    var attrName = pair.attrName;
+	var ngAttrName = pair.ngAttrName;
+	var attrName = pair.attrName;
 
-    myApp.directive(ngAttrName, function(IeHelperSrv) {
+	myApp.directive(ngAttrName, function(IeHelperSrv) {
 
-        return {
-            priority: 99,
-            link: function(scope, element, attrs) {
+		return {
+			priority: 99,
+			link: function(scope, element, attrs) {
 
-                attrs.$observe(ngAttrName, function(value) {
+				attrs.$observe(ngAttrName, function(value) {
 
-                    if (!value)
-                        return;
+					if (!value)
+						return;
 
-                    attrs.$set(attrName, value);
-                });
-            }
-        };
-    });
+					attrs.$set(attrName, value);
+				});
+			}
+		};
+	});
 });
-
-var app = {
-    'title': "Répartition des oiseaux en Guadeloupe"
-    , 'x': "x"
-    , notification: {
-        id: ""
-        , area: ""
-        , name: "Guadeloupe"
-        , value: 16
-        , color: "rgb(50,150,12)"
-    }
-};

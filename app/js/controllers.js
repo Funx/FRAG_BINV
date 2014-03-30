@@ -55,8 +55,6 @@ controllers.controller('mapCtrl', function($routeParams, $scope, $rootScope, $ht
 
 	var PER_H_FILET = 1;
 
-	$scope.app = app;
-
 	$rootScope.displayPhoto = false;
 	$rootScope.displayPreviousButton = false;
 	$rootScope.displayMenu = true;
@@ -192,8 +190,6 @@ controllers.controller('birdsCtrl', function($routeParams, $scope, $rootScope, $
 	var MIN_RADIUS = 3;
 
 	var PER_H_FILET = 1;
-
-	$scope.app = app;
 
 	$scope.displayPhoto = true;
 	$rootScope.displayPreviousButton = false;
